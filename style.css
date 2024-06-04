@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.task-box {
+  max-width: 550px;
+  margin: 0 auto;
+  height: 100vh;
+  background: #f3f3f3;
+}
+.container {
+  padding: 1rem;
+}
+
+#form-box h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.8rem;
+}
+.inupt {
+  display: flex;
+  gap: 2px;
+}
+#input-task {
+  width: 78%;
+  padding: 7px 12px;
+  border: 1px solid rgb(63, 61, 28);
+  border-radius: 5px;
+}
+#text-submit {
+  width: 90px;
+  padding: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  background: rgb(63, 61, 28);
+  color: White;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#text-submit:hover {
+  background: rgb(113, 87, 87);
+}
+
+#tasks-list{
+  height: 70vh;
+  overflow: auto;
+}
+#tasks-list h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.task {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.task input {
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  width: 65%;
+  background: rgb(91, 82, 82);
+  border: 0;
+  outline: 0;
+  color: #fff;
+  border-radius: 3px;
+}
+.action button {
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 3px;
+  width: 60px;
+}
+.edit {
+  background: rgb(164, 204, 103);
+  border: 1px solid greenyellow;
+  color: #664242;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.delete {
+  background: rgb(213, 91, 91);
+  color: #f3f3f3;
+  border: 1px solid rgb(191, 97, 97);
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: 4px;
+}
+.edit:hover {
+  background: chartreuse;
+}
+.delete:hover {
+  background: red;
+}
+
+/* media  */
+
+@media (max-width: 442px) {
+  .container {
+    padding: 0.5rem;
+  }
+  .inupt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  #input-task {
+    width: 100%;
+  }
+  #text-submit {
+    width: 100%;
+  }
+
+  .action {
+    display: flex;
+  }
+  .task input {
+    width: 70%;
+  }
+  .action button {
+    width: 50px;
+  }
+}
